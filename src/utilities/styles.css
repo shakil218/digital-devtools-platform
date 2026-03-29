@@ -1,0 +1,48 @@
+/* utilities/styles.css */
+.bgPrimary {
+  background: linear-gradient(to right, #4f39f6, #9514fa);
+}
+
+/* Gradient underline hover effect */
+
+.nav-list li a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 10px;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* underline */
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #4f39f6, #9514fa);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+/* hover animation */
+.nav-list li a:hover::after {
+  width: 100%;
+}
+
+/* hover text color */
+.nav-list li a:hover {
+  color: #8b5cf6;
+}
+
+/* optional active (manually add class="active") */
+.nav-list li a.active::after {
+  width: 100%;
+}
+
+.nav-list li a.active {
+  color: #8b5cf6;
+  font-weight: 600;
+}
