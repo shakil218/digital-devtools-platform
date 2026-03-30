@@ -10,10 +10,8 @@ import operation_toolkit from "../../assets/products/operation.png";
 import resume from "../../assets/products/portfolio.png";
 import social from "../../assets/products/social-media.png";
 import video from "../../assets/products/video-and-audio.png";
-import layout from "../../assets/products/web-template.png";
 import search from "../../assets/products/optimization.png";
 import cloud from "../../assets/products/cloud-server.png";
-import project from "../../assets/products/project-plan.png";
 import chatbot from "../../assets/products/chat-bot.png";
 
 // icon map
@@ -25,10 +23,8 @@ const iconMap = {
   resume: resume,
   social: social,
   video: video,
-  layout: layout,
   search: search,
   cloud: cloud,
-  project: project,
   chatbot: chatbot,
 };
 

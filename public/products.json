@@ -71,6 +71,21 @@
   },
   {
     "id": 7,
+    "name": "AI Chatbot Builder",
+    "description": "Build intelligent chatbots for customer support and automation.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": [
+      "No-code builder",
+      "Multi-platform support",
+      "AI training tools"
+    ],
+    "icon": "chatbot"
+  },
+  {
+    "id": 8,
 
     "name": "Video Editing Suite",
 
@@ -88,27 +103,6 @@
 
     "icon": "video"
   },
-
-  {
-    "id": 8,
-
-    "name": "UI Components Library",
-
-    "description": "Pre-built UI components for faster web development using modern frameworks.",
-
-    "price": 25,
-
-    "period": "one-time",
-
-    "tag": "New",
-
-    "tagType": "new",
-
-    "features": ["300+ components", "Tailwind support", "Lifetime updates"],
-
-    "icon": "layout"
-  },
-
   {
     "id": 9,
 
@@ -144,31 +138,6 @@
     "tagType": "best",
     "features": ["1TB storage", "File sharing", "Advanced security"],
     "icon": "cloud"
-  },
-  {
-    "id": 11,
-    "name": "Project Management Tool",
-    "description": "Organize tasks, collaborate with teams, and track project progress efficiently.",
-    "price": 45,
-    "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": ["Kanban boards", "Team collaboration", "Progress tracking"],
-    "icon": "project"
-  },
-  {
-    "id": 12,
-    "name": "AI Chatbot Builder",
-    "description": "Build intelligent chatbots for customer support and automation.",
-    "price": 39,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best",
-    "features": [
-      "No-code builder",
-      "Multi-platform support",
-      "AI training tools"
-    ],
-    "icon": "chatbot"
   }
+  
 ]
