@@ -22,8 +22,9 @@ const Navbar = () => {
       </li>
     </>
   );
+
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="backdrop-blur-md bg-base-100/80 shadow-sm sticky top-0 z-50">
       <div className="navbar max-w-7xl mx-auto px-4">
         {/* LEFT */}
         <div className="navbar-start">
@@ -49,7 +50,7 @@ const Navbar = () => {
             {/* Mobile Dropdown */}
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow nav-list"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow nav-list"
             >
               {listItems}
             </ul>
@@ -76,7 +77,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Login (hidden on very small screens) */}
+          {/* Login */}
           <a className="hidden sm:block cursor-pointer font-semibold">Login</a>
 
           {/* CTA Button */}
