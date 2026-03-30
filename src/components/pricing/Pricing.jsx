@@ -45,13 +45,13 @@ const Pricing = () => {
               ))}
             </ul>
 
-            <button className="mt-8 md:mt-auto w-full rounded-full py-3 text-white bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <button className="mt-8 md:mt-auto w-full rounded-full py-3 text-white bgPrimary">
               Get Started Free
             </button>
           </div>
 
           {/* Pro (Highlighted) */}
-          <div className="relative rounded-2xl p-8 text-white shadow-lg bg-linear-to-br from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+          <div className="relative rounded-2xl p-8 text-white shadow-lg bgPrimary">
             {/* Badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 text-xs font-medium bg-yellow-300 text-black rounded-full">
               Most Popular
@@ -84,7 +84,9 @@ const Pricing = () => {
             </ul>
 
             <button className="mt-8 w-full rounded-full py-3 bg-white text-purple-600 font-medium">
-              Start Pro Trial
+              <span className="bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7] bg-clip-text text-transparent font-medium">
+                Start Pro Trial
+              </span>
             </button>
           </div>
 
@@ -118,7 +120,7 @@ const Pricing = () => {
               ))}
             </ul>
 
-            <button className="mt-8 w-full rounded-full py-3 text-white bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <button className="mt-8 w-full rounded-full py-3 text-white bgPrimary">
               Contact Sales
             </button>
           </div>

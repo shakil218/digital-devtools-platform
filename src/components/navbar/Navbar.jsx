@@ -2,7 +2,7 @@ import React from "react";
 import { LiaShoppingCartSolid } from "react-icons/lia";
 import "../../utilities/styles.css";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const listItems = (
     <>
       <li>
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
 
           {/* Logo */}
-          <h3 className="text-2xl md:text-3xl font-extrabold bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent">
+          <h3 className="text-2xl md:text-3xl font-extrabold bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7] bg-clip-text text-transparent">
             DigiTools
           </h3>
         </div>
@@ -73,7 +73,12 @@ const Navbar = () => {
           <div className="btn btn-ghost btn-circle">
             <div className="indicator">
               <LiaShoppingCartSolid className="h-5 w-5" />
-              <span className="indicator-item">2</span>
+              {/* ✅ Dynamic Badge */}
+              {cart.length > 0 && (
+                <span className="indicator-item badge badge-secondary badge-xs text-xs w-4 h-4 rounded-full">
+                  {cart.length}
+                </span>
+              )}
             </div>
           </div>
 

@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const Stats = () => {
   return (
-    <section className="w-full bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+    <section className="w-full bgPrimary">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-3 text-center text-white">
           {/* Item 1 */}

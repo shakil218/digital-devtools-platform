@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Banner from '../../components/banner/Banner';
 import Stats from '../../components/stats/Stats';
@@ -6,15 +6,16 @@ import Steps from '../../components/steps/Steps';
 import Pricing from '../../components/pricing/Pricing';
 import CTASection from '../../components/workflow/CTASection';
 import Footer from '../../components/footer/Footer';
-import Products from '../../components/products/Products';
+import ProductsSection from '../../components/products/ProductsSection';
 
 const HomePage = () => {
+  const [cart, setCart] = useState([]);
   return (
     <div>
-      <Navbar/>
+      <Navbar cart={cart} />
       <Banner/>
       <Stats/>
-      <Products/>
+      <ProductsSection cart={cart} setCart={setCart} />
       <Steps/>
       <Pricing/>
       <CTASection/>

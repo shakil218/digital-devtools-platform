@@ -22,7 +22,7 @@ const Steps = () => {
           {/* Card 1 */}
           <div className="relative bg-base-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-2">
             {/* Step Number */}
-            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bg-linear-to-tr from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bgPrimary">
               01
             </div>
 
@@ -45,7 +45,7 @@ const Steps = () => {
 
           {/* Card 2 */}
           <div className="relative bg-base-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-2">
-            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bg-linear-to-tr from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bgPrimary">
               02
             </div>
 
@@ -66,7 +66,7 @@ const Steps = () => {
 
           {/* Card 3 */}
           <div className="relative bg-base-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition duration-300 hover:-translate-y-2">
-            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bg-linear-to-tr from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <div className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center text-sm font-semibold text-white rounded-full bgPrimary">
               03
             </div>
 

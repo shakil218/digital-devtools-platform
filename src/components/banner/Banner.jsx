@@ -42,7 +42,7 @@ const Banner = () => {
             </button>
 
             {/* Secondary Button */}
-            <div className="inline-block p-[1.5px] rounded-full bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+            <div className="inline-block p-[1.5px] rounded-full bgPrimary">
               <button className="btn w-full rounded-full flex items-center gap-2 px-6 bg-base-100">
                 <img src={playBtn} alt="Watch Demo" className="w-4 h-4" />
                 {/* Gradient Text */}
