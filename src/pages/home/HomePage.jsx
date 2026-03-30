@@ -6,6 +6,7 @@ import Steps from '../../components/steps/Steps';
 import Pricing from '../../components/pricing/Pricing';
 import CTASection from '../../components/workflow/CTASection';
 import Footer from '../../components/footer/Footer';
+import Products from '../../components/products/Products';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Navbar/>
       <Banner/>
       <Stats/>
+      <Products/>
       <Steps/>
       <Pricing/>
       <CTASection/>

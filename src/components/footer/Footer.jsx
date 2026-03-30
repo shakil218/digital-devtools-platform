@@ -67,7 +67,7 @@ const Footer = () => {
 
       {/* Divider */}
       <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-        <p>© 2026 Digitools. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Digitools. All rights reserved.</p>
 
         <div className="flex gap-6">
           <span className="hover:text-white cursor-pointer">
