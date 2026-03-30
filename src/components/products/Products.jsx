@@ -37,11 +37,35 @@ const tagStyles = {
 
 const Products = ({ cart, setCart }) => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
+  // 🔄 Fetch Data
   useEffect(() => {
-    fetch("/products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch("/products.json");
+
+        if (!res.ok) {
+          throw new Error("Failed to fetch products");
+        }
+
+        const data = await res.json();
+
+        // simulate delay (optional)
+        setTimeout(() => {
+          setProducts(data);
+          setLoading(false);
+        }, 800);
+      } catch (err) {
+        console.error(err);
+        setError(true);
+        setLoading(false);
+        toast.error("Failed to load products!");
+      }
+    };
+
+    fetchProducts();
   }, []);
 
   // ✅ Add to cart
@@ -56,6 +80,30 @@ const Products = ({ cart, setCart }) => {
     setCart((prev) => [...prev, product]);
     toast.success("Product added to cart!");
   };
+
+  // 🔄 Loading UI
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center py-20">
+        <span className="w-10 h-10 border-4 border-purple-500 border-dashed rounded-full animate-spin"></span>
+      </div>
+    );
+  }
+
+  // ❌ Error UI
+  if (error) {
+    return (
+      <div className="text-center py-20">
+        <p className="text-red-500 font-medium">Failed to load products</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-3 px-4 py-2 bg-purple-600 text-white rounded"
+        >
+          Retry
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
