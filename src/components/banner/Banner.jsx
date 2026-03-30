@@ -1,6 +1,6 @@
 import React from "react";
-import { FaPlay } from "react-icons/fa";
-import heroImage from '../../assets/banner.png';
+import playBtn from "../../assets/Play.png";
+import heroImage from "../../assets/banner.png";
 
 const Banner = () => {
   return (
@@ -42,10 +42,15 @@ const Banner = () => {
             </button>
 
             {/* Secondary Button */}
-            <button className="btn btn-outline rounded-full flex items-center gap-2 px-6">
-              <FaPlay className="text-xs" />
-              Watch Demo
-            </button>
+            <div className="inline-block p-[1.5px] rounded-full bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7]">
+              <button className="btn rounded-full flex items-center gap-2 px-6 bg-base-100">
+                <img src={playBtn} alt="Watch Demo" className="w-4 h-4" />
+                {/* Gradient Text */}
+                <span className="bg-linear-to-r from-[#4f39f6] via-[#7c3aed] to-[#a855f7] bg-clip-text text-transparent font-medium">
+                  Watch Demo
+                </span>
+              </button>
+            </div>
           </div>
         </div>
 
