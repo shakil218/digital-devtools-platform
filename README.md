@@ -1,5 +1,13 @@
 # 🚀 Digital DevTools Platform
 
+![Digital DevTools Screenshot](https://github.com/shakil218/digital-devtools-platform/blob/main/Screenshot%202026-04-09%20020726.png?raw=true)
+
+## 🌐 Live Demo
+[Click here to view the live project] (https://digital-devtools-platform.netlify.app/)
+
+## 🔗 GitHub Repository
+[Click here to view the GitHub repo] (https://github.com/shakil218/digital-devtools-platform)
+
 A modern and responsive **Digital DevTools Platform** that provides premium tools to boost productivity and creativity. Users can browse products, add them to cart, manage items, and experience a smooth checkout flow with real-time UI updates.
 
 ---
